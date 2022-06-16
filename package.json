@@ -2,9 +2,9 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/iampsr8/Forkify/issues"
   },
-  "homepage": "https://github.com/iampsr8/Forkify#readme"
+  "homepage": "https://github.com/iampsr8/Forkify#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "core-js": "^3.23.1",
+    "regenerator-runtime": "^0.13.9"
+  }
 }
