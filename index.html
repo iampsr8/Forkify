@@ -11,8 +11,11 @@
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="src/sass/main.scss" />
-    <script defer src="src/js/controller.js"></script>
-
+    <script type="module" defer src="src/js/controller.js"></script>
+    <script
+      src="https://kit.fontawesome.com/da990a79a1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
 
@@ -121,7 +124,7 @@
           </button> -->
         </div>
 
-        <p class="copyright">
+        <!-- <p class="copyright">
           &copy; Copyright by
           <a
             class="twitter-link"
@@ -130,7 +133,7 @@
             >Jonas Schmedtmann</a
           >. Use for learning or your portfolio. Don't use to teach. Don't claim
           as your own.
-        </p>
+        </p> -->
       </div>
 
       <div class="recipe">
@@ -255,6 +258,31 @@
         -->
       </div>
     </div>
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy;2022 Designed by Jonas Schmedtmann, developed by Prateek Rath
+      </p>
+      <div class="prateek_socials">
+        <a
+          class="footer__link prateek_link soc"
+          href="https://www.linkedin.com/in/prateek-rath-9a9779219/"
+          target="blank"
+          ><i class="footer-icon fab fa-linkedin"></i
+        ></a>
+        <a
+          class="footer__link prateek_twt soc"
+          href="https://twitter.com/iampsr8"
+          target="blank"
+          ><i class="footer-icon fab fa-twitter"></i
+        ></a>
+        <a
+          class="footer__link prateek_insta soc"
+          href="https://www.instagram.com/i_am_psr8/"
+          target="blank"
+          ><i class="footer-icon fab fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
 
     <div class="overlay hidden"></div>
     <div class="add-recipe-window hidden">
