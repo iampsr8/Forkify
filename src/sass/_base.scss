@@ -1,7 +1,9 @@
 // $color-primary: #f59a83;
-$color-primary: #f38e82;
+// $color-primary: #f38e82;
+$color-primary: #ff5541;
 $color-grad-1: #fbdb89;
-$color-grad-2: #f48982;
+// $color-grad-2: #f48982;
+$color-grad-2: #ff594e;
 
 $color-grey-light-1: #f9f5f3; // Light background
 $color-grey-light-2: #f2efee; // Light lines
@@ -67,5 +69,32 @@ body {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+}
+
+.footer {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 4rem;
+  color: black;
+  &__link {
+    color: black;
+    padding: 1.2rem;
+    font-size: 2.2rem;
+  }
+}
+
+.prateek {
+  &_socials {
+    margin-top: 1.2rem;
+  }
+  &_link:hover {
+    color: #006297;
+  }
+  &_twt:hover {
+    color: #008ee7;
+  }
+  &_insta:hover {
+    color: #fb0093;
   }
 }
