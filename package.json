@@ -1,0 +1,19 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iampsr8/Forkify.git"
+  },
+  "author": "Prateek Rath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iampsr8/Forkify/issues"
+  },
+  "homepage": "https://github.com/iampsr8/Forkify#readme"
+}
