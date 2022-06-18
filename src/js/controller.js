@@ -55,15 +55,24 @@ const controlSearchResults = async function () {
   }
 };
 
-//subscriber-publisher pattern of linking functions b/w controller and view-------------------
-
 const controlPagination = function (goToPage) {
   resultsView.render(model.getSearchResultsPage(goToPage));
   paginationView.render(model.state.search);
 };
 
+const controlServings = function (newServings) {
+  //update recipe servings(in state)
+  model.updateServings(newServings);
+
+  //updating the recipe view
+  recipeView.update(model.state.recipe);
+};
+
+//subscriber-publisher pattern of linking functions b/w controller and view-------------------
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
+  recipeView.addHandlerUpdateServings(controlServings);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
 };
