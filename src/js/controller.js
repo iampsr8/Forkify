@@ -26,6 +26,8 @@ const controlRecipes = async function () {
     recipeView.renderSpinner();
     //update results view to mark selected search result
     resultsView.update(model.getSearchResultsPage());
+
+    //updating the bookmarks view
     bookmarksView.update(model.state.bookmarks);
 
     //loading recipe
@@ -86,9 +88,14 @@ const controlAddBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 //subscriber-publisher pattern of linking functions b/w controller and view-------------------
 
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
