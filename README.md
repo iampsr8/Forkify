@@ -1,6 +1,6 @@
 # Forkify
 
-Search for over 1 Million detailed recipes, bookmark them, add to favorites, create recipes of your own and add them and many more, powered by the Forkify API.
+Search for over 1 Million detailed recipes, bookmark them, add to favorites, create recipes of your own and add them and many more, powered by the Forkify API. Not yet complete
 
 ## Installation
 
